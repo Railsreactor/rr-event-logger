@@ -12,3 +12,5 @@
 .rspec_status
 
 .byebug_history
+.semaphore-cache
+.env

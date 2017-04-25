@@ -9,7 +9,7 @@ module RailsReactorEvents
       source_root File.expand_path('../templates', __FILE__)
       desc 'Add the migration for events creating'
 
-      def self.next_migration_number(path)
+      def self.next_migration_number(_path)
         if ActiveRecord::Base.timestamped_migrations
           next_migration_number = Time.new.utc.strftime('%Y%m%d%H%M%S')
         else

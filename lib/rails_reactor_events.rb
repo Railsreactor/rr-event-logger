@@ -1,9 +1,9 @@
-require "active_record"
+require 'active_record'
 
-require "rails_reactor_events/version"
-require "rails_reactor_events/app/models/event"
+require 'rails_reactor_events/version'
+require 'rails_reactor_events/app/models/event'
 
-require "generators/rails_reactor_events/install/install_generator"
+require 'generators/rails_reactor_events/install/install_generator'
 
 module RailsReactorEvents
   def self.log_event(entity:, action:, user: nil, message: nil, params: {})

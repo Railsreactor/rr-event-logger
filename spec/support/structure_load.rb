@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 # loading structure for tests
 
 ActiveRecord::Base.establish_connection(
-  adapter: "postgresql",
-  host:    "localhost",
-  username: "natalie",
-  password: "",
-  database: "events_gem_db",
+  adapter: 'postgresql',
+  host:    ENV['DATABASE_HOST'],
+  username: ENV['DATABASE_USERNAME'],
+  password: ENV['DATABASE_PASSWORD'],
+  database: ENV['DATABASE_NAME'],
   pool: 50
 )
 
